@@ -1,0 +1,109 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.user-profile {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center; /* Center align content */
+}
+
+.user-profile .logo {
+    width: 100px; /* Adjust size as needed */
+    margin-bottom: 20px; /* Space between logo and content */
+}
+
+.user-profile h2 {
+    margin-top: 0;
+    color: #fff;
+}
+
+.user-profile p {
+    color: #ccc;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #444;
+    color: #fff;
+}
+
+.avatar-selection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.avatar-selection label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.avatar-selection img {
+    border: 2px solid transparent;
+    border-radius: 50%;
+    transition: border-color 0.3s;
+}
+
+.avatar-selection input[type="radio"] {
+    display: none;
+}
+
+.avatar-selection input[type="radio"]:checked + img {
+    border-color: #007bff;
+}
+
+button[type="submit"] {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+button[name="delete_account"] {
+    background-color: #dc3545;
+}
+
+button[name="delete_account"]:hover {
+    background-color: #c82333;
+}
+.success-message {
+    color: #28a745; /* Verde para indicar éxito */
+    margin-top: 10px;
+}
